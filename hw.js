@@ -17,7 +17,7 @@ function findName(string){
 
 //Call method here with parameters
 
-console.log(findName(dog_names))
+console.log(findName(dog_string))
 
 
 
@@ -30,15 +30,24 @@ and replaces it with the string "even index" */
 arr1 = ["Max","Baseball","Reboot","Goku","Trucks","Rodger"];
 
 function evenIndex(arr) {
-
-        var even = arr.splice(name => {
-            return 0, name % 2 === 0, 'even index'
-        })
-        console.log(even)
+    for (var even = 0; even < arr.length; even += 2) {
+        if( even % 2 === 0){
+            arr[even] = 'even index'
+        }
     }
+    console.log(arr)
+}
+evenIndex(arr1)
 
 
-console.log(evenIndex(arr1))
+//         var even = arr.splice(name => {
+//             return 0, name % 2 === 0, 'even index'
+//         })
+//         console.log(even)
+//     }
+
+
+// console.log(evenIndex(arr1))
     // for (var name in arr){
         // arr.splice( 0, odd,  'even index')
     
